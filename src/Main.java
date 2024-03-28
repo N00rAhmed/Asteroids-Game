@@ -1,7 +1,6 @@
 
 import java.awt.Color;
 import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
 import javax.swing.JFrame;
 public class Main {
 
