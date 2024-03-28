@@ -1,3 +1,6 @@
+
+import java.awt.Color;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JFrame;
 public class Main {
@@ -6,11 +9,18 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		JFrame frame = new JFrame(); // creates a frame
-		frame.setSize(420,420); //set x and y dimension on frame
+		frame.setTitle("Asteroids Game"); // sets title of frame
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setResizable(false); // stops frame being resized
+		frame.setSize(850,600); //set x and y dimension on frame
 		frame.setVisible(true); //make frame visible
 
 		System.out.println("Welcome to the Java Asteroids Game");
 
+		ImageIcon image = new ImageIcon("logo.jpg"); // create image icon
+		frame.setIconImage(image.getImage()); // change icon of frame
+		
+		frame.getContentPane().setBackground(Color.black);
 	}
 
 }
