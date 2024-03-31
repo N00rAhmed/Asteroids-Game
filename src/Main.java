@@ -1,5 +1,8 @@
 
 import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.JComponent;
+
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 public class Main {

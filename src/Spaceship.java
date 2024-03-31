@@ -32,6 +32,11 @@ public class Spaceship extends Rectangle{
 	
 	public void draw(Graphics g){
 		g.setColor(this.color);
-		g.fillRect(this.x, this.y, this.width, this.height);
+        int[] xPoints = {this.x, this.x + this.width / 2, this.x + this.width};
+        int[] yPoints = {this.y, this.y + this.height, this.y};
+        int nPoints = 3;
+        g.drawPolygon(xPoints, yPoints, nPoints);
+
+//		g.fillRect(this.x, this.y, this.width, this.height);
 	}
 }

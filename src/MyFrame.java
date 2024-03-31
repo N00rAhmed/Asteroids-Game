@@ -1,6 +1,7 @@
 import java.awt.event.*;
 import javax.swing.*;
 import java.awt.*;
+import javax.swing.JComponent;
 
 
 public class MyFrame extends JFrame {
@@ -14,8 +15,11 @@ public class MyFrame extends JFrame {
 	
 	MyFrame(){
 
-		player = new Spaceship(100,300,50,50,Color.blue);
+//		player = new Spaceship(100,300,50,50,Color.blue);
+		player = new Spaceship(100, 300, 50, 100,Color.blue);
+
 		enemy = new Spaceship(400,300,50,50,Color.red);
+		
 		gameOver = false;
 
 //		JFrame frame = new JFrame(); // creates a frame
@@ -58,6 +62,12 @@ public class MyFrame extends JFrame {
 
 	    // Draw the image on the frame's graphics
 		g.drawImage(image,0,0,this);
+		
+		if (gameOver) {
+			g.setColor(Color.red);
+			g.setFont(new Font("MV Boli", Font.PLAIN,45));
+			g.drawString("GAME OVER!!!", 150, 100);
+		}
 
 	}
 	
@@ -67,7 +77,10 @@ public class MyFrame extends JFrame {
 	
 	
 	public void checkCollision() {
-		
+		if(player.intersects(enemy)) {
+			gameOver = true;
+			System.out.println("game over");
+		}
 	}
 	public class AL extends KeyAdapter{
 		@Override
