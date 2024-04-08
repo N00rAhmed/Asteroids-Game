@@ -26,8 +26,7 @@ public class MyFrame extends JFrame {
 		System.out.println("Welcome to the Java Asteroids Game");
 
 		ImageIcon image = new ImageIcon("logo.jpg"); // create image icon
-		this.setIconImage(image.getImage()); // change icon of frame
-		
+		this.setIconImage(image.getImage()); // change icon of frame		
 	}
 	
 	
