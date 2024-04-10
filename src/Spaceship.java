@@ -11,7 +11,7 @@ public class Spaceship extends Rectangle{
 //	boolean rotatingRight = false;
 	
 	int rotation = 0;
-
+	int a;
 	//	make it now go in the direction of the rotation
 
 	Spaceship(int x, int y, int width, int height, Color color){
@@ -25,6 +25,7 @@ public class Spaceship extends Rectangle{
 	public void keyPressed(KeyEvent e){
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
 			this.y=y-10;
+			
 		}
 		if(e.getKeyCode() == KeyEvent.VK_DOWN) {
 			this.y=y+10;
@@ -39,6 +40,7 @@ public class Spaceship extends Rectangle{
 		
 		if(e.getKeyCode() == KeyEvent.VK_LEFT) {
 			this.rotation -= 5; // decrease rotatiion angle
+//			this.y=y-5;
 		}
 		if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
 			this.rotation += 5; // increase rotation angle 
