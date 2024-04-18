@@ -40,10 +40,13 @@ public class Spaceship extends Rectangle{
 		
 		if(e.getKeyCode() == KeyEvent.VK_LEFT) {
 			this.rotation -= 5; // decrease rotatiion angle
+			System.out.println(rotation);
 //			this.y=y-5;
 		}
 		if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
 			this.rotation += 5; // increase rotation angle 
+			System.out.println(rotation);
+
 		}
 //		becuase of use of rotation variable we are not setting the location/direction which is done using x and y
 	
