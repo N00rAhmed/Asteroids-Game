@@ -25,6 +25,12 @@ public class Spaceship extends Rectangle{
 	public void keyPressed(KeyEvent e){
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
 			this.y=y-10;
+//			this moves upp because u add minus 10 units from y. if u add rotation variable then it will 
+//			only make object go even more up. You need to Set the rotation value as the the new direction
+//			for then the y to go up in that direction
+			
+//			look into direction vectors
+			
 			
 		}
 		if(e.getKeyCode() == KeyEvent.VK_DOWN) {
