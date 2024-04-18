@@ -30,7 +30,7 @@ public class Spaceship extends Rectangle{
 //			for then the y to go up in that direction
 			
 //			look into direction vectors
-			
+// https://stackoverflow.com/questions/58574041/java-how-to-make-a-graphics-object-move-in-its-facing-direction			
 			
 		}
 		if(e.getKeyCode() == KeyEvent.VK_DOWN) {
