@@ -11,7 +11,7 @@ public class Spaceship extends Rectangle{
 //	boolean rotatingRight = false;
 	
 	int rotation = 0;
-	int a;
+	int speed = 10; //define speed of spaceship
 	//	make it now go in the direction of the rotation
 
 	Spaceship(int x, int y, int width, int height, Color color){
@@ -24,14 +24,16 @@ public class Spaceship extends Rectangle{
 	
 	public void keyPressed(KeyEvent e){
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
-			this.y=y-10;
+//			this.y=y-10;
+			moveInDirection(rotation, speed);
 
 //			look into direction vectors
 // https://stackoverflow.com/questions/58574041/java-how-to-make-a-graphics-object-move-in-its-facing-direction			
 			
 		}
 		if(e.getKeyCode() == KeyEvent.VK_DOWN) {
-			this.y=y+10;
+//			this.y=y+10;
+			moveInDirection(rotation + 180, speed);   // Adjust the direction by 180 degrees for downward movement
 		}
 		
 //		if(e.getKeyCode() == KeyEvent.VK_LEFT) {
@@ -51,8 +53,18 @@ public class Spaceship extends Rectangle{
 			System.out.println(rotation);
 
 		}
+		
 //		becuase of use of rotation variable we are not setting the location/direction which is done using x and y
 	
+	}
+	
+	
+	public void moveInDirection(int angle, int distance) {
+		double radians = Math.toRadians(angle);
+		int dx = (int) (distance * Math.cos(radians));
+		int dy = (int) (distance * Math.sin(radians));
+		this.x += dx;
+		this.y += dy;
 	}
 	
 	public void draw(Graphics g){
