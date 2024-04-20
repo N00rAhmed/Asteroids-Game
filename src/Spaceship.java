@@ -29,6 +29,7 @@ public class Spaceship extends Rectangle{
 
 //			look into direction vectors
 // https://stackoverflow.com/questions/58574041/java-how-to-make-a-graphics-object-move-in-its-facing-direction			
+//			in the future see how you can make the physics better
 			
 		}
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
