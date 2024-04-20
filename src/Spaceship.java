@@ -23,17 +23,17 @@ public class Spaceship extends Rectangle{
 	}
 	
 	public void keyPressed(KeyEvent e){
-		if(e.getKeyCode() == KeyEvent.VK_UP) {
+		if(e.getKeyCode() == KeyEvent.VK_DOWN) {
 //			this.y=y-10;
-			moveInDirection(rotation, speed);
+			moveInDirection(rotation - 90, speed);
 
 //			look into direction vectors
 // https://stackoverflow.com/questions/58574041/java-how-to-make-a-graphics-object-move-in-its-facing-direction			
 			
 		}
-		if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+		if(e.getKeyCode() == KeyEvent.VK_UP) {
 //			this.y=y+10;
-			moveInDirection(rotation + 180, speed);   // Adjust the direction by 180 degrees for downward movement
+			moveInDirection(rotation + 90, speed);   // Adjust the direction by 180 degrees for downward movement
 		}
 		
 //		if(e.getKeyCode() == KeyEvent.VK_LEFT) {
