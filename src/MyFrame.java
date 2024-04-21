@@ -14,10 +14,12 @@ public class MyFrame extends JFrame {
 	MyFrame(){
 
 		player = new Spaceship(400, 250, 25, 40,Color.blue);
-
+		
+		
 		this.setTitle("Asteroids Game"); // sets title of frame
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false); // stops frame being resized
+		
 		this.setSize(850,600); //set x and y dimension on frame
 		
 		this.setVisible(true); //make frame visible
