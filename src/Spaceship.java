@@ -77,6 +77,5 @@ public class Spaceship extends Rectangle{
         int nPoints = 3;
         g.drawPolygon(xPoints, yPoints, nPoints);
 
-//		g.fillRect(this.x, this.y, this.width, this.height);
 	}
 }
