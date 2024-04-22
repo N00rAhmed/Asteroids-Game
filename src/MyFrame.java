@@ -12,9 +12,7 @@ public class MyFrame extends JFrame {
 	
 	
 	MyFrame(){
-
 		player = new Spaceship(400, 250, 15, 20,Color.white);
-		
 		
 		this.setTitle("Asteroids Game"); // sets title of frame
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -27,8 +25,8 @@ public class MyFrame extends JFrame {
 
 		System.out.println("Welcome to the Java Asteroids Game");
 
-		ImageIcon image = new ImageIcon("logo.jpg"); // create image icon
-		this.setIconImage(image.getImage()); // change icon of frame		
+		ImageIcon image = new ImageIcon("logo.jpg");
+		this.setIconImage(image.getImage());	
 	}
 	
 	
