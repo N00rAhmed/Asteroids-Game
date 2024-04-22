@@ -45,11 +45,7 @@ public class Spaceship extends Rectangle{
 			System.out.println(rotation);
 
 		}
-		
-
-		
-//		becuase of use of rotation variable we are not setting the location/direction which is done using x and y
-	
+			
 	}
 	
 	
