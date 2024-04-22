@@ -13,7 +13,7 @@ public class MyFrame extends JFrame {
 	
 	MyFrame(){
 
-		player = new Spaceship(400, 250, 25, 40,Color.blue);
+		player = new Spaceship(400, 250, 15, 20,Color.white);
 		
 		
 		this.setTitle("Asteroids Game"); // sets title of frame
