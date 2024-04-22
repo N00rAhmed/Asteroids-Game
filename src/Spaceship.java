@@ -38,7 +38,6 @@ public class Spaceship extends Rectangle{
 		if(e.getKeyCode() == KeyEvent.VK_LEFT) {
 			this.rotation -= 5; // decrease rotatiion angle
 			System.out.println(rotation);
-//			this.y=y-5;
 		}
 		if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
 			this.rotation += 5; // increase rotation angle 
@@ -57,10 +56,11 @@ public class Spaceship extends Rectangle{
 		this.y += dy;
 	}
 	
+	
 	public void draw(Graphics g){
 		
         Graphics2D g2d = (Graphics2D) g;
-        
+
         // Translate to the center of the spaceship
         g2d.translate(this.x + this.width / 2, this.y + this.height / 2);
 
@@ -70,7 +70,6 @@ public class Spaceship extends Rectangle{
         // Translate back to the original position
         g2d.translate(-this.x - this.width / 2, -this.y - this.height / 2);
 
-        
 		g.setColor(this.color);
         int[] xPoints = {this.x, this.x + this.width / 2, this.x + this.width};
         int[] yPoints = {this.y, this.y + this.height, this.y};
