@@ -31,7 +31,7 @@ public class Spaceship extends Rectangle{
 			
 //		}
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
-			moveInDirection(rotation + 90, speed);   // Adjust the direction by 180 degrees for downward movement
+			moveInDirection(rotation + 90, speed);
 		}
 		
 		
