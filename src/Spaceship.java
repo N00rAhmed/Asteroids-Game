@@ -9,7 +9,6 @@ public class Spaceship extends Rectangle{
 	
 	int rotation = 0;
 	int speed = 10; //define speed of spaceship
-	//	make it now go in the direction of the rotation
 
 	Spaceship(int x, int y, int width, int height, Color color){
 		this.x = x;
