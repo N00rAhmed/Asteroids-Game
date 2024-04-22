@@ -7,9 +7,6 @@ public class Spaceship extends Rectangle{
 	
 	Color color;
 	
-//	boolean rotatingLeft = false;
-//	boolean rotatingRight = false;
-	
 	int rotation = 0;
 	int speed = 10; //define speed of spaceship
 	//	make it now go in the direction of the rotation
@@ -23,6 +20,7 @@ public class Spaceship extends Rectangle{
 	}
 	
 	public void keyPressed(KeyEvent e){
+		
 //		if(e.getKeyCode() == KeyEvent.VK_DOWN) {
 //			this.y=y-10;
 //			moveInDirection(rotation - 90, speed);
@@ -30,6 +28,8 @@ public class Spaceship extends Rectangle{
 //			in the future see how you can make the physics better
 			
 //		}
+		
+		
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
 			moveInDirection(rotation + 90, speed);
 		}
