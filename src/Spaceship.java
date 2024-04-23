@@ -20,21 +20,9 @@ public class Spaceship extends Rectangle{
 	
 	public void keyPressed(KeyEvent e){
 		
-		
-//		if(e.getKeyCode() == KeyEvent.VK_DOWN) {
-//			this.y=y-10;
-//			moveInDirection(rotation - 90, speed);
-
-//			in the future see how you can make the physics better
-			
-//		}
-		
-		
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
 			moveInDirection(rotation + 90, speed);
 		}
-		
-		
 		if(e.getKeyCode() == KeyEvent.VK_LEFT) {
 			this.rotation -= 5; // decrease rotation angle
 			System.out.println(rotation);

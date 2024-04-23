@@ -48,8 +48,6 @@ public class MyFrame extends JFrame {
 
 	    // Draw the image on the frame's graphics
 		g.drawImage(image,0,0,this);
-		
-
 	}
 	
 	
