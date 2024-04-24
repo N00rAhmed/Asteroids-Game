@@ -19,7 +19,6 @@ public class MyFrame extends JFrame {
 		this.setResizable(false); // stops frame being resized
 		
 		this.setSize(850,600); //set x and y dimension on frame
-		
 		this.setVisible(true); //make frame visible
 		this.addKeyListener(new AL());
 

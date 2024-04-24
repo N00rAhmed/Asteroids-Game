@@ -48,7 +48,25 @@ public class Spaceship extends Rectangle{
 	public void draw(Graphics g){
 		
         Graphics2D g2d = (Graphics2D) g;
-
+//        width 850, hight 600
+        if (y <= 0) { // if off the top move to bottom
+        	y = 600;
+        	System.out.println(y);
+        }  
+        if (y > 600) { // if off botttom move to top
+        	y = 1;
+        	System.out.println(y);
+        }
+        
+        if (x <= 0) {
+        	x = 800;
+        	System.out.println(x);
+        }
+        if (x > 800) {
+        	x = 1;
+        	System.out.println(x);
+        }
+        
         // Translate to the centre of the spaceship
         g2d.translate(this.x + this.width / 2, this.y + this.height / 2);
 
