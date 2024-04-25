@@ -48,7 +48,7 @@ public class Spaceship extends Rectangle{
 	public void draw(Graphics g){
 		
         Graphics2D g2d = (Graphics2D) g;
-//        width 850, hight 600
+
         if (y <= 0) { // if off the top move to bottom
         	y = 600;
         	System.out.println(y);
