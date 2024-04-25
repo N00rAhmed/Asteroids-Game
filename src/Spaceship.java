@@ -38,6 +38,8 @@ public class Spaceship extends Rectangle{
 	
 	public void moveInDirection(int angle, int distance) {
 		double radians = Math.toRadians(angle);
+		double vely = -2;
+
 		int dx = (int) (distance * Math.cos(radians));
 		int dy = (int) (distance * Math.sin(radians));
 		this.x += dx;
