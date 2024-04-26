@@ -2,6 +2,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.awt.Rectangle;
 import java.awt.Color;
+import java.util.Timer;
 
 public class Spaceship extends Rectangle{
 	
@@ -23,6 +24,7 @@ public class Spaceship extends Rectangle{
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
 			moveInDirection(rotation + 90, speed);
 		}
+
 		if(e.getKeyCode() == KeyEvent.VK_LEFT) {
 			this.rotation -= 5; // decrease rotation angle
 			System.out.println(rotation);
@@ -38,8 +40,7 @@ public class Spaceship extends Rectangle{
 	
 	public void moveInDirection(int angle, int distance) {
 		double radians = Math.toRadians(angle);
-		double vely = -2;
-
+		
 		int dx = (int) (distance * Math.cos(radians));
 		int dy = (int) (distance * Math.sin(radians));
 		this.x += dx;
@@ -50,7 +51,7 @@ public class Spaceship extends Rectangle{
 	public void draw(Graphics g){
 		
         Graphics2D g2d = (Graphics2D) g;
-
+        
         if (y <= 0) { // if off the top move to bottom
         	y = 600;
         	System.out.println(y);
@@ -68,6 +69,8 @@ public class Spaceship extends Rectangle{
         	x = 1;
         	System.out.println(x);
         }
+        
+        
         
         // Translate to the centre of the spaceship
         g2d.translate(this.x + this.width / 2, this.y + this.height / 2);
