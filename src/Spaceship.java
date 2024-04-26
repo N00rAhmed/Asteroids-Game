@@ -2,7 +2,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.awt.Rectangle;
 import java.awt.Color;
-import java.util.Timer;
 
 public class Spaceship extends Rectangle{
 	
