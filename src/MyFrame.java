@@ -9,10 +9,12 @@ public class MyFrame extends JFrame {
 	Image image;
 	Graphics graphics;
 	Spaceship player;
+	Asteroids asteroids;
 	
 	
 	MyFrame(){
 		player = new Spaceship(400, 250, 15, 20,Color.white);
+		asteroids = new Asteroids(300, 300, 30, 30, Color.white);
 		
 		this.setTitle("Asteroids Game"); // sets title of frame
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -42,9 +44,12 @@ public class MyFrame extends JFrame {
 		graphics.setColor(Color.black);
 		graphics.fillRect(0, 0, this.getWidth(), this.getHeight());
 
+		
 		// Draw the spaceships on the image's graphics
 		player.draw(graphics);
+		asteroids.draw(graphics);
 
+		
 	    // Draw the image on the frame's graphics
 		g.drawImage(image,0,0,this);
 	}

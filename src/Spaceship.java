@@ -70,7 +70,6 @@ public class Spaceship extends Rectangle{
         }
         
         
-        
         // Translate to the centre of the spaceship
         g2d.translate(this.x + this.width / 2, this.y + this.height / 2);
 
