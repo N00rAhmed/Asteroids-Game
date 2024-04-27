@@ -1,3 +1,5 @@
+import java.awt.*;
+import java.awt.event.*;
 import java.awt.Rectangle;
 import java.awt.Color;
 
@@ -14,6 +16,9 @@ public class Asteroids extends Rectangle {
 	}
 	
 	public void draw(Graphics g) {
+		Graphics2D g2d = (Graphics2D) g;
+		
+		
 		
 	}
 	
