@@ -9,17 +9,19 @@ public class MyFrame extends JFrame {
 	Image image;
 	Graphics graphics;
 	Spaceship player;
-	
-	public Asteroids asteroids = new Asteroids();
+	Asteroids a;
+//	
+//	public Asteroids asteroids = new Asteroids();
+//
+//	public void a() {
+//		asteroids.somit();
+//	}
 
-	public void a() {
-		asteroids.somit();
-	}
-
-	
+//	100, 100, 50, 50
 	MyFrame(){
 		player = new Spaceship(400, 250, 15, 20,Color.white);
-		
+		a = new Asteroids(100, 100, 50, 50,Color.white);
+
 		this.setTitle("Asteroids Game created by Noor Ahmed"); // sets title of frame
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false); // stops frame being resized
@@ -32,8 +34,7 @@ public class MyFrame extends JFrame {
 
 		ImageIcon image = new ImageIcon("logo.jpg");
 		this.setIconImage(image.getImage());
-		
-		a();
+//		a();
 	}
 	
 	
@@ -51,6 +52,9 @@ public class MyFrame extends JFrame {
 		graphics.fillRect(0, 0, this.getWidth(), this.getHeight());
 
 		// Draw the spaceships on the image's graphics
+
+		a.draw(graphics);
+
 		player.draw(graphics);
 
 	    // Draw the image on the frame's graphics
