@@ -5,6 +5,12 @@ import java.awt.Color;
 
 public class Spaceship extends Rectangle{
 	
+//	public Asteroids asteroids = new Asteroids();
+//
+//	public void a() {
+//		asteroids.somit();
+//	}
+	
 	Color color;
 	
 	int rotation = 0;
@@ -16,6 +22,7 @@ public class Spaceship extends Rectangle{
 		this.width = width;
 		this.height = height;
 		this.color = color;
+//		a();
 	}
 	
 	public void keyPressed(KeyEvent e){
@@ -50,7 +57,7 @@ public class Spaceship extends Rectangle{
 	public void draw(Graphics g){
 		
         Graphics2D g2d = (Graphics2D) g;
-        
+
         if (y <= 0) { // if off the top move to bottom
         	y = 600;
         	System.out.println(y);
