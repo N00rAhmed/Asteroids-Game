@@ -24,11 +24,8 @@ public class Asteroids extends Rectangle{
         Graphics2D g2d = (Graphics2D) g;
         
 		g.setColor(this.color);
-//        int[] xPoints = {this.x, this.x + this.width / 2, this.x + this.width};
-//        int[] yPoints = {this.y, this.y + this.height, this.y};
-//        int nPoints = 3;
-//        g.drawPolygon(xPoints, yPoints, nPoints);
-        g.drawOval(100, 100, 50, 50);
+
+		g.drawOval(100, 100, 50, 50);
 
         
 	}
