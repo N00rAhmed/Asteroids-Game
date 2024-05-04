@@ -23,9 +23,6 @@ public class Asteroids extends Rectangle{
 		
         Graphics2D g2d = (Graphics2D) g;
         
-        // Translate back to the original position
-//        g2d.translate(-this.x - this.width / 2, -this.y - this.height / 2);
-
 		g.setColor(this.color);
 //        int[] xPoints = {this.x, this.x + this.width / 2, this.x + this.width};
 //        int[] yPoints = {this.y, this.y + this.height, this.y};
