@@ -35,6 +35,7 @@ public class MyFrame extends JFrame {
 		ImageIcon image = new ImageIcon("logo.jpg");
 		this.setIconImage(image.getImage());
 //		a();
+		a.somit();
 	}
 	
 	
