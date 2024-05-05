@@ -5,8 +5,6 @@ public class Main {
 		
 		MyFrame myFrame = new MyFrame();
 		
-//		Asteroids as = new Asteroids();
-//		as.somit();
 	}
 
 }
