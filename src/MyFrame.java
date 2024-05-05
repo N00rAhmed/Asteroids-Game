@@ -10,13 +10,8 @@ public class MyFrame extends JFrame {
 	Graphics graphics;
 	Spaceship player;
 	Asteroids a;
-//	
-//	public Asteroids asteroids = new Asteroids();
-//
-//	public void a() {
-//		asteroids.somit();
-//	}
 
+	
 //	100, 100, 50, 50
 	MyFrame(){
 		player = new Spaceship(400, 250, 15, 20,Color.white);

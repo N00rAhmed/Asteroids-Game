@@ -4,16 +4,12 @@ import java.awt.Rectangle;
 import java.awt.Color;
 
 public class Spaceship extends Rectangle{
-	
-//	public Asteroids asteroids = new Asteroids();
-//
-//	public void a() {
-//		asteroids.somit();
-//	}
-	
+		
 	Color color;
 	
 	int rotation = 0;
+	
+	// speed = 10
 	int speed = 10; //define speed of spaceship
 
 	Spaceship(int x, int y, int width, int height, Color color){
@@ -22,7 +18,6 @@ public class Spaceship extends Rectangle{
 		this.width = width;
 		this.height = height;
 		this.color = color;
-//		a();
 	}
 	
 	public void keyPressed(KeyEvent e){
@@ -32,10 +27,12 @@ public class Spaceship extends Rectangle{
 		}
 
 		if(e.getKeyCode() == KeyEvent.VK_LEFT) {
+			// 5
 			this.rotation -= 5; // decrease rotation angle
 			System.out.println(rotation);
 		}
 		if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
+			// 5
 			this.rotation += 5; // increase rotation angle 
 			System.out.println(rotation);
 
