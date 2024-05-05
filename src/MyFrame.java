@@ -34,8 +34,9 @@ public class MyFrame extends JFrame {
 
 		ImageIcon image = new ImageIcon("logo.jpg");
 		this.setIconImage(image.getImage());
-//		a();
+
 		a.somit();
+	
 	}
 	
 	
@@ -52,10 +53,9 @@ public class MyFrame extends JFrame {
 		graphics.setColor(Color.black);
 		graphics.fillRect(0, 0, this.getWidth(), this.getHeight());
 
-		// Draw the spaceships on the image's graphics
-
 		a.draw(graphics);
-
+		
+		// Draw the spaceships on the image's graphics
 		player.draw(graphics);
 
 	    // Draw the image on the frame's graphics
