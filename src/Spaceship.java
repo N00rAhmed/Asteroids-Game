@@ -37,6 +37,9 @@ public class Spaceship extends Rectangle{
 			System.out.println(rotation);
 
 		}
+		if(e.getKeyCode() == KeyEvent.VK_SPACE) {
+			System.out.println("BULLET");
+		}
 			
 	}
 	
