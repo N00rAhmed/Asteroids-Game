@@ -7,6 +7,8 @@ public class Spaceship extends Rectangle{
 		
 	Color color;
 	
+	Bullets bullets;
+	
 	int rotation = 0;
 	
 	// speed = 10
@@ -56,6 +58,9 @@ public class Spaceship extends Rectangle{
 	public void draw(Graphics g){
 		
         Graphics2D g2d = (Graphics2D) g;
+        
+//        Bullets bullets = new Bullets;
+        bullets = new Bullets(100, 100, 50, 50, Color.white);
 
         if (y <= 0) { // if off the top move to bottom
         	y = 600;
