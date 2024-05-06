@@ -40,7 +40,6 @@ public class Spaceship extends Rectangle{
 		if(e.getKeyCode() == KeyEvent.VK_SPACE) {
 			System.out.println("BULLET");
 		}
-			
 	}
 	
 	
