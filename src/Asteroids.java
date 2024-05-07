@@ -24,14 +24,18 @@ public class Asteroids extends Rectangle{
         
 		g.setColor(this.color);
 
+		// this changes the location and size of asteroid
+		// also if you call this multiple times then it 
+		// will create multiple asteroids
 		g.drawOval(100, 100, 50, 50);
-
+		
         
 	}
 	
 	
 	public void somit() {
 		System.out.println("hello world from the Asteroids Class");
+		
 	}
 	
 

@@ -11,7 +11,6 @@ public class MyFrame extends JFrame {
 	Spaceship player;
 	Asteroids a;
 
-	
 //	100, 100, 50, 50
 	MyFrame(){
 		player = new Spaceship(400, 250, 15, 20,Color.white);
