@@ -1,7 +1,5 @@
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.Rectangle;
-import java.awt.Color;
 
 public class Spaceship extends Rectangle{
 		
@@ -10,7 +8,8 @@ public class Spaceship extends Rectangle{
 	Bullets bullets;
 	
 	int rotation = 0;
-	
+	Graphics graphics;
+
 	// speed = 10
 	int speed = 10; //define speed of spaceship
 
@@ -22,6 +21,9 @@ public class Spaceship extends Rectangle{
 		this.color = color;
 	}
 	
+	
+	
+
 	public void keyPressed(KeyEvent e){
 		
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
@@ -40,7 +42,16 @@ public class Spaceship extends Rectangle{
 
 		}
 		if(e.getKeyCode() == KeyEvent.VK_SPACE) {
-			System.out.println("BULLET");
+//			System.out.println("BULLET");
+			bullets.bulletMessage();
+//			b(Graphics g);
+//	        Graphics2D g2d = (Graphics2D) g;
+
+//			bullets = new Bullets(100, 200, 50, 50, Color.white);
+//	        bullets.draw(graphics);
+
+//			bullets.draw(graphics);
+//			bullets.draw(Graphics g);
 		}
 	}
 	
@@ -53,14 +64,14 @@ public class Spaceship extends Rectangle{
 		this.x += dx;
 		this.y += dy;
 	}
-	
+
 	
 	public void draw(Graphics g){
 		
         Graphics2D g2d = (Graphics2D) g;
         
 //        Bullets bullets = new Bullets;
-        bullets = new Bullets(100, 100, 50, 50, Color.white);
+//        bullets = new Bullets(100, 200, 50, 50, Color.white);
 
         if (y <= 0) { // if off the top move to bottom
         	y = 600;
@@ -80,6 +91,8 @@ public class Spaceship extends Rectangle{
         	System.out.println(x);
         }
         
+//		bullets = new Bullets(100, 200, 50, 50, Color.white);
+//        bullets.draw(g2d);
         
         // Translate to the centre of the spaceship
         g2d.translate(this.x + this.width / 2, this.y + this.height / 2);

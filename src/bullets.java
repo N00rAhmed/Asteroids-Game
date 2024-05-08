@@ -5,8 +5,11 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Bullets extends Rectangle{
-	Color color;
 	
+	Color color;
+
+	Graphics graphics;
+
 	Bullets(int x, int y, int width, int height, Color color){
 		this.x = x;
 		this.y = y;
@@ -20,8 +23,14 @@ public class Bullets extends Rectangle{
         
 		g.setColor(this.color);
 
-		g.drawOval(100, 100, 50, 50);
+		g.drawOval(100, 200, 50, 50);
 		
+	}
+	
+	public void bulletMessage() {
+
+		
+		System.out.println("BULLET");
 	}
 
 }
