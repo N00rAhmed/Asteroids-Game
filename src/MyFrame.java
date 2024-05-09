@@ -10,14 +10,15 @@ public class MyFrame extends JFrame {
 	Graphics graphics;
 	Spaceship player;
 	Asteroids a;
-	Bullets bullets;
+	
+//	Bullets bullets;
 
 //	100, 100, 50, 50
 	MyFrame(){
 		player = new Spaceship(400, 250, 15, 20,Color.white);
 		a = new Asteroids(100, 100, 50, 50,Color.white);
 		
-		bullets = new Bullets(100, 200, 50, 50, Color.white);
+//		bullets = new Bullets(100, 200, 50, 50, Color.white);
 		
 		this.setTitle("Asteroids Game created by Noor Ahmed"); // sets title of frame
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
