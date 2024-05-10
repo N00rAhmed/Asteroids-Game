@@ -44,14 +44,7 @@ public class Spaceship extends Rectangle{
 		if(e.getKeyCode() == KeyEvent.VK_SPACE) {
 //			System.out.println("BULLET");
 			bullets.bulletMessage();
-//			b(Graphics g);
-//	        Graphics2D g2d = (Graphics2D) g;
 
-//			bullets = new Bullets(100, 200, 50, 50, Color.white);
-//	        bullets.draw(graphics);
-
-//			bullets.draw(graphics);
-//			bullets.draw(Graphics g);
 		}
 	}
 	
