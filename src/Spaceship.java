@@ -22,8 +22,6 @@ public class Spaceship extends Rectangle{
 	}
 	
 	
-	
-
 	public void keyPressed(KeyEvent e){
 		
 		if(e.getKeyCode() == KeyEvent.VK_UP) {
@@ -42,9 +40,7 @@ public class Spaceship extends Rectangle{
 
 		}
 		if(e.getKeyCode() == KeyEvent.VK_SPACE) {
-//			System.out.println("BULLET");
 			bullets.bulletMessage();
-
 		}
 	}
 	
@@ -84,8 +80,8 @@ public class Spaceship extends Rectangle{
         	System.out.println(x);
         }
         
-//		bullets = new Bullets(100, 200, 50, 50, Color.white);
-//        bullets.draw(g2d);
+		bullets = new Bullets(100, 200, 50, 50, Color.white);
+        bullets.draw(g2d);
         
         // Translate to the centre of the spaceship
         g2d.translate(this.x + this.width / 2, this.y + this.height / 2);
