@@ -41,6 +41,8 @@ public class Spaceship extends Rectangle{
 		}
 		if(e.getKeyCode() == KeyEvent.VK_SPACE) {
 			bullets.bulletMessage();
+			
+//			bullets.drawe(graphics);
 		}
 	}
 	
@@ -80,7 +82,10 @@ public class Spaceship extends Rectangle{
         	System.out.println(x);
         }
         
-		bullets = new Bullets(100, 200, 50, 50, Color.white);
+//		bullets = new Bullets(100, 200, 50, 50, Color.white);
+        
+        bullets = new Bullets(x, y, width, height, color);
+
         bullets.draw(g2d);
         
         // Translate to the centre of the spaceship

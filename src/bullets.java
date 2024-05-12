@@ -26,7 +26,15 @@ public class Bullets extends Rectangle{
 		g.drawOval(100, 200, 50, 50);
 		
 	}
-	
+	public void drawe(Graphics g) {
+        Graphics2D g2d = (Graphics2D) g;
+        
+		g.setColor(this.color);
+
+		g.drawOval(100, 300, 50, 50);
+		
+	}
+
 	public void bulletMessage() {
 
 		
