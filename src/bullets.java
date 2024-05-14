@@ -10,6 +10,7 @@ public class Bullets extends Rectangle{
 
 	Graphics graphics;
 
+	
 	Bullets(int x, int y, int width, int height, Color color){
 		this.x = x;
 		this.y = y;
@@ -22,14 +23,9 @@ public class Bullets extends Rectangle{
         Graphics2D g2d = (Graphics2D) g;
         
 		g.setColor(this.color);
-
-		g.drawOval(100, 200, 50, 50);
-		
-	}
-	public void drawe(Graphics g) {
-        Graphics2D g2d = (Graphics2D) g;
-		g.setColor(this.color);
-		g.drawOval(100, 300, 50, 50);
+        g.fillOval(10, 20, this.width, this.height); // Use the bullet's dimensions for drawing
+        
+//		g.drawOval(100, 200, 50, 50);
 		
 	}
 

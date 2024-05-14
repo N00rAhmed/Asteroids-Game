@@ -13,12 +13,16 @@ public class Spaceship extends Rectangle{
 	// speed = 10
 	int speed = 10; //define speed of spaceship
 
+	
+	
+	
 	Spaceship(int x, int y, int width, int height, Color color){
 		this.x = x;
 		this.y = y;
 		this.width = width;
 		this.height = height;
 		this.color = color;
+		bullets = new Bullets(x, y, 10, 20, Color.white);
 	}
 	
 	
@@ -41,7 +45,7 @@ public class Spaceship extends Rectangle{
 		}
 		if(e.getKeyCode() == KeyEvent.VK_SPACE) {
 			bullets.bulletMessage();
-			
+			bullets = new Bullets(x, y, 10, 20, Color.white);
 //			bullets.drawe(graphics);
 		}
 	}
@@ -84,9 +88,9 @@ public class Spaceship extends Rectangle{
         
 //		bullets = new Bullets(100, 200, 50, 50, Color.white);
         
-        bullets = new Bullets(x, y, width, height, color);
+//        bullets = new Bullets(x, y, width, height, color);
 
-        bullets.draw(g2d);
+//        bullets.draw(g2d);
         
         // Translate to the centre of the spaceship
         g2d.translate(this.x + this.width / 2, this.y + this.height / 2);
