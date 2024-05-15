@@ -12,8 +12,6 @@ public class Spaceship extends Rectangle{
 
 	// speed = 10
 	int speed = 10; //define speed of spaceship
-
-	
 	
 	
 	Spaceship(int x, int y, int width, int height, Color color){
