@@ -62,9 +62,6 @@ public class Spaceship extends Rectangle{
 		
         Graphics2D g2d = (Graphics2D) g;
         
-//        Bullets bullets = new Bullets;
-//        bullets = new Bullets(100, 200, 50, 50, Color.white);
-
         if (y <= 0) { // if off the top move to bottom
         	y = 600;
         	System.out.println(y);
