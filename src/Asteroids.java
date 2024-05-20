@@ -29,7 +29,6 @@ public class Asteroids extends Rectangle{
 		// will create multiple asteroids
 		g.drawOval(100, 100, 50, 50);
 		
-        
 	}
 	
 	
