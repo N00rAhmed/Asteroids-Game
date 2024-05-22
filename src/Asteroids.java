@@ -34,7 +34,6 @@ public class Asteroids extends Rectangle{
 	
 	public void somit() {
 		System.out.println("hello world from the Asteroids Class");
-		
 	}
 	
 
