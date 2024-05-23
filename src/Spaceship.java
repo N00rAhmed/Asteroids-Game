@@ -10,7 +10,6 @@ public class Spaceship extends Rectangle{
 	int rotation = 0;
 	Graphics graphics;
 
-	// speed = 10
 	int speed = 10; //define speed of spaceship
 	
 	

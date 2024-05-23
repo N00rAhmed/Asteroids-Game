@@ -9,7 +9,6 @@ public class Bullets extends Rectangle{
 	Color color;
 
 	Graphics graphics;
-
 	
 	Bullets(int x, int y, int width, int height, Color color){
 		this.x = x;
