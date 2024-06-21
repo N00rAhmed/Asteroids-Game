@@ -2,7 +2,8 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.JComponent;
-
+import javax.swing.JPanel;
+import javax.swing.JFrame;
 
 public class MyFrame extends JFrame {
 
@@ -11,12 +12,16 @@ public class MyFrame extends JFrame {
 	Spaceship player;
 	Asteroids a;
 	
+//	second s = new second();
+//	JFrame f = new JFrame();
+//	f.add(s);
+
 
 //	100, 100, 50, 50
 	MyFrame(){
 		player = new Spaceship(400, 250, 15, 20,Color.white);
 		a = new Asteroids(100, 100, 50, 50,Color.white);
-				
+		
 		this.setTitle("Asteroids Game created by Noor Ahmed"); // sets title of frame
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false); // stops frame being resized
@@ -29,7 +34,8 @@ public class MyFrame extends JFrame {
 
 		ImageIcon image = new ImageIcon("logo.jpg");
 		this.setIconImage(image.getImage());
-
+		
+		
 		a.somit();
 	
 	}

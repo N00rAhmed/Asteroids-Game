@@ -3,20 +3,24 @@ import javax.swing.JPanel;
 import java.awt.color.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.Timer;
 
 
 public class Asteroids extends Rectangle{
 	
-	Color color;
 	
+	Color color;
+		
 	Asteroids(int x, int y, int width, int height, Color color){
 		this.x = x;
 		this.y = y;
 		this.width = width;
 		this.height = height;
 		this.color = color;
+
 	}
 
+	
 		
 	public void draw(Graphics g){
 		
