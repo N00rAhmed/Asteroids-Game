@@ -11,17 +11,17 @@ public class MyFrame extends JFrame {
 	Graphics graphics;
 	Spaceship player;
 	Asteroids a;
-	
-//	second s = new second();
-//	JFrame f = new JFrame();
-//	f.add(s);
-
+	second s;
 
 //	100, 100, 50, 50
-	MyFrame(){
+	public void myframe(){
 		player = new Spaceship(400, 250, 15, 20,Color.white);
 		a = new Asteroids(100, 100, 50, 50,Color.white);
-		
+
+//		second s = new second();
+//		JFrame f = new JFrame();
+//		f.add(s);
+
 		this.setTitle("Asteroids Game created by Noor Ahmed"); // sets title of frame
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false); // stops frame being resized
