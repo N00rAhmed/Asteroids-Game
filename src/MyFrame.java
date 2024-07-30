@@ -18,6 +18,8 @@ public class MyFrame extends JFrame {
 		player = new Spaceship(400, 250, 15, 20,Color.white);
 		a = new Asteroids(100, 100, 50, 50,Color.white);
 
+//		extra c = new extra();
+
 //		second s = new second();
 //		JFrame f = new JFrame();
 //		f.add(s);
@@ -55,7 +57,7 @@ public class MyFrame extends JFrame {
 		graphics.fillRect(0, 0, this.getWidth(), this.getHeight());
 
 		a.draw(graphics);
-				
+		
 		// Draw the spaceships on the image's graphics
 		player.draw(graphics);
 
