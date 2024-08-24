@@ -12,13 +12,17 @@ public class MyFrame extends JFrame {
 	Spaceship player;
 	Asteroids a;
 	second s;
-
+	extra e;
+	
 //	100, 100, 50, 50
-	public void myframe(){
+	public void MyFrame(){
 		player = new Spaceship(400, 250, 15, 20,Color.white);
+		
+		// maybe try to animate a here manually below by using code from second 
 		a = new Asteroids(100, 100, 50, 50,Color.white);
 
-//		extra c = new extra();
+//		e = new extra();  // initialize extra
+		
 
 //		second s = new second();
 //		JFrame f = new JFrame();
@@ -36,6 +40,15 @@ public class MyFrame extends JFrame {
 
 		ImageIcon image = new ImageIcon("logo.jpg");
 		this.setIconImage(image.getImage());
+		
+		
+        this.setLayout(null); // Set layout to null for absolute positioning
+        // Add the extra JPanel to MyFrame
+        
+        
+//        e.setBounds(300, 300, 200, 200); // Position and size of extra JPanel
+//        this.add(e);
+
 		
 		
 		a.somit();
@@ -74,6 +87,8 @@ public class MyFrame extends JFrame {
 			repaint();
 		}
 	}
+	
+	
 	
 	
 }

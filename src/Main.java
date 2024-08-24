@@ -11,8 +11,10 @@ public class Main {
 		
 		MyFrame game = new MyFrame();
         // Call the myframe() method to initialize and display the game window
-        game.myframe();
+        game.MyFrame();
 
+//		new MyFrame();
+		
 //        MyFrame game = new MyFrame();
 
 		
