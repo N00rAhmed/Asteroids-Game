@@ -10,7 +10,7 @@ public class MyFrame extends JFrame {
 	Image image;
 	Graphics graphics;
 	Spaceship player;
-	Asteroids a;
+//	Asteroids a;
 	second s;
 	extra e;
 	
@@ -19,8 +19,8 @@ public class MyFrame extends JFrame {
 		player = new Spaceship(400, 250, 15, 20,Color.white);
 		
 		// maybe try to animate a here manually below by using code from second 
-		a = new Asteroids(100, 100, 50, 50,Color.white);
-
+//		a = new Asteroids(100, 100, 50, 50,Color.white);
+		
 //		e = new extra();  // initialize extra
 		
 
@@ -50,8 +50,7 @@ public class MyFrame extends JFrame {
 //        this.add(e);
 
 		
-		
-		a.somit();
+//		a.somit();
 	
 	}
 	
@@ -69,7 +68,7 @@ public class MyFrame extends JFrame {
 		graphics.setColor(Color.black);
 		graphics.fillRect(0, 0, this.getWidth(), this.getHeight());
 
-		a.draw(graphics);
+//		a.draw(graphics);
 		
 		// Draw the spaceships on the image's graphics
 		player.draw(graphics);
