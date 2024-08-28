@@ -21,12 +21,8 @@ public class MyFrame extends JFrame {
 		// maybe try to animate a here manually below by using code from second 
 //		a = new Asteroids(100, 100, 50, 50,Color.white);
 		
-//		e = new extra();  // initialize extra
-		
 
-//		second s = new second();
-//		JFrame f = new JFrame();
-//		f.add(s);
+		
 
 		this.setTitle("Asteroids Game created by Noor Ahmed"); // sets title of frame
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -42,16 +38,18 @@ public class MyFrame extends JFrame {
 		this.setIconImage(image.getImage());
 		
 		
-        this.setLayout(null); // Set layout to null for absolute positioning
-        // Add the extra JPanel to MyFrame
+        e = new extra();
+        e.imagedisplay(); // Call the method to display the image
+
         
-        
-//        e.setBounds(300, 300, 200, 200); // Position and size of extra JPanel
-//        this.add(e);
+        // Add the extra JPanel to MyFrame        
+        e.setBounds(300, 300, 200, 200); // Position and size of extra JPanel
+        this.add(e);
 
 		
-//		a.somit();
-	
+        this.setLayout(null); // Set layout to null for absolute positioning
+
+        
 	}
 	
 	
@@ -68,7 +66,6 @@ public class MyFrame extends JFrame {
 		graphics.setColor(Color.black);
 		graphics.fillRect(0, 0, this.getWidth(), this.getHeight());
 
-//		a.draw(graphics);
 		
 		// Draw the spaceships on the image's graphics
 		player.draw(graphics);
